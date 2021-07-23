@@ -144,5 +144,9 @@ public class MazeWorld extends World
         MazeParedes mazeParedes59 = new MazeParedes();
         addObject(mazeParedes59,6*50,8*50);
 
+        meta meta = new meta();
+        addObject(meta,700,255);
+        Car car = new Car();
+        addObject(car,170,95);
     }
 }

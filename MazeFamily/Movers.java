@@ -52,8 +52,12 @@ public class Movers extends Actor
 
         if (Greenfoot.isKeyDown("right"))
         {
-            setLocation(x + speed, y);
-
+            setRotation(0);
+            if ((x+speed)>170)
+            {
+                setLocation(x + speed, y);
+            }
+            
             if (toparseConPared()==true) 
             {   // si se topa con la pared entonces "regresara" la distancia recorrida
                 setLocation(x - speed, y);
@@ -62,7 +66,12 @@ public class Movers extends Actor
 
         if (Greenfoot.isKeyDown("left"))
         {
-            setLocation(x - speed, y);
+            setRotation(0);
+            if ((x-speed)>170)
+            {
+                setLocation(x - speed, y);
+            }
+            
             if (toparseConPared()==true) 
             {   // si se topa con la pared entonces "regresara" la distancia recorrida
                 setLocation(x + speed, y);
