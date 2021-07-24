@@ -22,14 +22,16 @@ public class Car extends Movers
     public void act()
     {
         // Add your action code here.
-        moverse();
-        llegarMeta();
+        moverse(); // llamada del metodo moverse 
+        llegarMeta(); // llamada de metodo en caso que llegue a la meta
     }
 
     public void llegarMeta()
     {
-        if(isTouching(meta.class))
+        // metodo en caso de llegar a la meta 
+        if(isTouching(meta.class)) // si el objeto de la clase Car toca al objeto de la clase meta entonces quiere decir que llego a la meta.
         {
+            // se coloca imagen de "llegar a la meta"
             GreenfootImage myImage = new GreenfootImage("metaImage.png");
             setImage(myImage);
         }

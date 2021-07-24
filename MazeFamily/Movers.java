@@ -17,8 +17,10 @@ public class Movers extends Actor
     {
         // Add your action code here.
     }
-    int speed = 3;
-    public void giros()
+    int speed = 3; // es la cantidad pixeles que se mueve
+    
+    /*public void giros()
+     * esta clase aun no se sabe si se implementara en la version final
     {
         if (Greenfoot.isKeyDown("right"))
         {
@@ -43,18 +45,20 @@ public class Movers extends Actor
             setRotation(90);
             move(3);
         }
-    }
+    } */ 
 
     public void moverse()
     {
-        int x = getX();
-        int y = getY();
+        int x = getX(); // obtiene la posicion en x del objeto
+        int y = getY(); // obtiene la posicicion en y del objeto 
 
         if (Greenfoot.isKeyDown("right"))
-        {
-            setRotation(0);
-            if ((x+speed)>170)
+        { 
+            // indica movimiento hacia la derecha 
+            if ((x+speed)>170) 
             {
+                // verifica que no sean posiciones que provoque salirse del laberinto 
+                // si esta dentro del limite permitira el movimiento
                 setLocation(x + speed, y);
             }
             
@@ -64,10 +68,9 @@ public class Movers extends Actor
             }
         }
 
-        if (Greenfoot.isKeyDown("left"))
-        {
-            setRotation(0);
-            if ((x-speed)>170)
+        if (Greenfoot.isKeyDown("left")) // presiona tecla izquierda 
+        {    
+            if ((x-speed)>170) // permitira el movimiento 
             {
                 setLocation(x - speed, y);
             }

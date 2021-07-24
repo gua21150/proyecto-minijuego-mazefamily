@@ -27,6 +27,8 @@ public class MazeWorld extends World
      */
     private void prepare()
     {
+        // instrucciones para preparacion del mundo 
+        // se agregan objetos de la clase MazeParedes
         MazeParedes mazeParedes = new MazeParedes();
         addObject(mazeParedes,4*50,1*50);
         MazeParedes mazeParedes2 = new MazeParedes();
@@ -143,9 +145,10 @@ public class MazeWorld extends World
         addObject(mazeParedes58,4*50,4*50);
         MazeParedes mazeParedes59 = new MazeParedes();
         addObject(mazeParedes59,6*50,8*50);
-
+        // se agrega objeto meta de la clase meta
         meta meta = new meta();
         addObject(meta,700,255);
+        // se agrega objeto car de la clase Car
         Car car = new Car();
         addObject(car,170,95);
     }
