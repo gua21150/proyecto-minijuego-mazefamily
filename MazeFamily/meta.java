@@ -1,12 +1,12 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class meta here.
+ * Esta clase indica cuando el carro ha llegado hasta la meta. Se utiliza más el objeto instanciado de esta clase
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class meta extends Actor
+public class Meta extends Actor
 {
     /**
      * Act - do whatever the meta wants to do. This method is called whenever
@@ -15,5 +15,9 @@ public class meta extends Actor
     public void act()
     {
         // Add your action code here.
+    }
+    
+    public Meta(){
+        getImage().scale(getImage().getWidth()*2, getImage().getHeight()*2);
     }
 }
