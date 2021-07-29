@@ -12,19 +12,9 @@ public class LlamadaRetos extends Actor
      * Act - do whatever the LlamadaRetos wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    public void act()
+    
+    public LlamadaRetos()
     {
-        /*if (isTouching(Car.class))
-        {
-            crearReto();
-        }*/
+        getImage().scale(getImage().getWidth()/2, getImage().getHeight());
     }
-    
-    public void crearReto()
-    {
-        /*int n1 = Greenfoot.getRandomNumber(0-10);
-        String respuesta = JOptionPane.showInputDialog("Suma " + n1 + " + " + n1);*/
-    }
-    
-    
 }

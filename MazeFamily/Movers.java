@@ -93,18 +93,4 @@ public class Movers extends Actor
             Greenfoot.stop(); // Pausara a todo greenfoot
         }
     }
-    
-    
-    public void reto()
-    {
-        Actor reto;
-        reto = getOneObjectAtOffset(0,0, LlamadaRetos.class);
-        // metodo en caso de tocar casilla de retos       
-        if(reto != null)
-        {
-            World world;
-            world = getWorld();
-            world.removeObject(reto);
-        }
-    }
 }

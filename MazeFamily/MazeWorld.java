@@ -10,7 +10,8 @@ public class MazeWorld extends World
 {
     SimpleTimer timerCount = new SimpleTimer(); // Se importa la clase desde edit
     Timer timer = new Timer(); // permitira poder poner el tiempo en esta imagen
-    int inicio = 0; // variable para indicar que se inicia a correr tiempo
+    int inicio = 0; // variable para indicar que se inicia a correr tiempo  
+    GreenfootSound music = new GreenfootSound("innocent2.mp3");
     /**
      * Constructor for objects of class MazeWorld.
      * 
@@ -20,7 +21,8 @@ public class MazeWorld extends World
         // Create a new world with 800X600 cells with a cell size of 1X1 pixels.
         // Largo, alto, pixel
         super(800, 600, 1); 
-        prepare();        
+        prepare(); 
+        inicio =1;
     }
 
     public void act()
@@ -29,15 +31,9 @@ public class MazeWorld extends World
         {            
             timer.setValue(timerCount.millisElapsed()/1000);
         }
-        
-        if (Greenfoot.isKeyDown("space"))
-        {
-            inicio = 1;
-            timerCount.mark(); // comenzara a contar el tiempo
-        }
-        
-        String tiempoTotal= Integer.toString(timer.getValue());
-        showText(tiempoTotal, getWidth()/2, getHeight()/2);
+        /*String tiempoTotal= Integer.toString(timer.getValue());
+        showText(tiempoTotal, getWidth()/2, getHeight()/2);*/
+        music.play();
     }
     
     /**
@@ -50,6 +46,10 @@ public class MazeWorld extends World
         // agrega objeto contador de puntos
         ContadorPuntos contadorPuntos = new ContadorPuntos();
         addObject(contadorPuntos,55,30); 
+
+        // se agrega objeto car de la clase Car
+        Car car = new Car(contadorPuntos);
+        addObject(car,170,95);
 
         // se agregan objetos de la clase MazeParedes
         MazeParedes mazeParedes = new MazeParedes();
@@ -171,11 +171,11 @@ public class MazeWorld extends World
         // se agrega objeto meta de la clase meta
         Meta meta = new Meta();
         addObject(meta,700,255);
-        // se agrega objeto car de la clase Car
-        Car car = new Car();
-        addObject(car,170,95);
+
+        // objetos llamadaRetos
         LlamadaRetos llamadaRetos = new LlamadaRetos();
         addObject(llamadaRetos,457,104);
+
         llamadaRetos.setLocation(443,102);
         meta.setLocation(738,245);      
         addObject(timer,686,79);
@@ -185,5 +185,19 @@ public class MazeWorld extends World
         contadorPuntos.setLocation(79,270);
         timer.setLocation(72,99);
         contadorPuntos.setLocation(738,51);
+        meta.setLocation(732,247);
+        LlamadaRetos llamadaRetos2 = new LlamadaRetos();
+        addObject(llamadaRetos2,256,252);
+        LlamadaRetos llamadaRetos3 = new LlamadaRetos();
+        addObject(llamadaRetos3,490,356);
+        LlamadaRetos llamadaRetos4 = new LlamadaRetos();
+        addObject(llamadaRetos4,608,407);
+        llamadaRetos4.setLocation(591,411);
+        llamadaRetos3.setLocation(494,350);
+        LlamadaRetos llamadaRetos5 = new LlamadaRetos();
+        addObject(llamadaRetos5,596,156);
+        llamadaRetos5.setLocation(600,151);
+        LlamadaRetos llamadaRetos6 = new LlamadaRetos();
+        addObject(llamadaRetos6,348,397);
     }
 }

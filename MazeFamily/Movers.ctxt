@@ -7,6 +7,4 @@ comment2.params=
 comment2.target=boolean\ toparseConPared()
 comment3.params=
 comment3.target=void\ llegarMeta()
-comment4.params=
-comment4.target=void\ reto()
-numComments=5
+numComments=4
