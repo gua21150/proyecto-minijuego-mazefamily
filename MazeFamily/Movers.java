@@ -13,40 +13,10 @@ public class Movers extends Actor
      * Act - do whatever the Movers wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    public void act()
-    {
-        // Add your action code here.
-    }
+
     int speed = 3; // es la cantidad pixeles que se mueve
     
-    /*public void giros()
-     * esta clase aun no se sabe si se implementara en la version final
-    {
-        if (Greenfoot.isKeyDown("right"))
-        {
-            setRotation(0);
-            move(3);
-        }
-
-        if (Greenfoot.isKeyDown("left"))
-        {
-            setRotation(180);
-            move(3);
-        }
-
-        if (Greenfoot.isKeyDown("up"))
-        {
-            setRotation(270);
-            move(3);
-        }
-
-        if (Greenfoot.isKeyDown("down"))
-        {
-            setRotation(90);
-            move(3);
-        }
-    } */ 
-
+    
     public void moverse()
     {
         int x = getX(); // obtiene la posicion en x del objeto
@@ -110,6 +80,31 @@ public class Movers extends Actor
         else 
         {
             return false;            
+        }
+    }
+    
+    public void llegarMeta()
+    {
+        // metodo en caso de llegar a la meta 
+        if(isTouching(Meta.class)) // si el objeto de la clase Car toca al objeto de la clase meta entonces quiere decir que llego a la meta.
+        {
+            // se coloca imagen de "llegar a la meta"
+            getWorld().addObject(new WinnerScreen(), getWorld().getWidth()/2, getWorld().getHeight()/2);
+            Greenfoot.stop(); // Pausara a todo greenfoot
+        }
+    }
+    
+    
+    public void reto()
+    {
+        Actor reto;
+        reto = getOneObjectAtOffset(0,0, LlamadaRetos.class);
+        // metodo en caso de tocar casilla de retos       
+        if(reto != null)
+        {
+            World world;
+            world = getWorld();
+            world.removeObject(reto);
         }
     }
 }
