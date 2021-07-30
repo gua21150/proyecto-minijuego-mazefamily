@@ -1,11 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
-<<<<<<< Updated upstream
  * Este mundo despliega únicamente los datos de tiempo y de punteo de la bonificación extra que tienen los usuarios.
-=======
- * Este mundo desplega unicamente los datos de tiempo y de punteo de la bonificación extra que tienen los usuarios.
->>>>>>> Stashed changes
  * Es instanciado desde movers tras haber llegado el objeto car a la meta.
  * @author Mariel Alejandra Guamuche Recinos
  * @version 29/07/2021
