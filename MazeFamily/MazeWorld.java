@@ -8,9 +8,11 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class MazeWorld extends World
 {
-
+    SimpleTimer timerCount = new SimpleTimer(); // Se importa la clase desde edit
+    Timer timer = new Timer(); // permitira poder poner el tiempo en esta imagen
+    int inicio = 0; // variable para indicar que se inicia a correr tiempo
     /**
-     * Constructor for objects of class MyWorld.
+     * Constructor for objects of class MazeWorld.
      * 
      */
     public MazeWorld()
@@ -18,15 +20,38 @@ public class MazeWorld extends World
         // Create a new world with 800X600 cells with a cell size of 1X1 pixels.
         // Largo, alto, pixel
         super(800, 600, 1); 
-        prepare();
+        prepare();        
     }
 
+    public void act()
+    {
+        if (inicio == 1)
+        {            
+            timer.setValue(timerCount.millisElapsed()/1000);
+        }
+        
+        if (Greenfoot.isKeyDown("space"))
+        {
+            inicio = 1;
+            timerCount.mark(); // comenzara a contar el tiempo
+        }
+        
+        String tiempoTotal= Integer.toString(timer.getValue());
+        showText(tiempoTotal, getWidth()/2, getHeight()/2);
+    }
+    
     /**
      * Prepare the world for the start of the program.
      * That is: create the initial objects and add them to the world.
      */
     private void prepare()
     {
+        // instrucciones para preparacion del mundo 
+        // agrega objeto contador de puntos
+        ContadorPuntos contadorPuntos = new ContadorPuntos();
+        addObject(contadorPuntos,55,30); 
+
+        // se agregan objetos de la clase MazeParedes
         MazeParedes mazeParedes = new MazeParedes();
         addObject(mazeParedes,4*50,1*50);
         MazeParedes mazeParedes2 = new MazeParedes();
@@ -143,6 +168,22 @@ public class MazeWorld extends World
         addObject(mazeParedes58,4*50,4*50);
         MazeParedes mazeParedes59 = new MazeParedes();
         addObject(mazeParedes59,6*50,8*50);
-
+        // se agrega objeto meta de la clase meta
+        Meta meta = new Meta();
+        addObject(meta,700,255);
+        // se agrega objeto car de la clase Car
+        Car car = new Car();
+        addObject(car,170,95);
+        LlamadaRetos llamadaRetos = new LlamadaRetos();
+        addObject(llamadaRetos,457,104);
+        llamadaRetos.setLocation(443,102);
+        meta.setLocation(738,245);      
+        addObject(timer,686,79);
+        timer.setLocation(732,73);
+        contadorPuntos.setLocation(84,52);
+        timer.setLocation(75,159);
+        contadorPuntos.setLocation(79,270);
+        timer.setLocation(72,99);
+        contadorPuntos.setLocation(738,51);
     }
 }

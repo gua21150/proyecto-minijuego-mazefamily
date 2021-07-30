@@ -16,12 +16,15 @@ public class Car extends Movers
     public Car()
     {
         // Le dara al objeto la mitad del tama~o original
-        getImage().scale(getImage().getWidth()/2, getImage().getHeight()/2);
+        getImage().scale(getImage().getWidth()/2, getImage().getHeight());
     }
-    
+
     public void act()
     {
         // Add your action code here.
-        moverse();
+        moverse(); // llamada del metodo moverse 
+        llegarMeta(); // llamada de metodo en caso que llegue a la meta
+        reto();
+        
     }
 }

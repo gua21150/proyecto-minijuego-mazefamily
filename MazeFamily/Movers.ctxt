@@ -2,12 +2,11 @@
 comment0.target=Movers
 comment0.text=\r\n\ Write\ a\ description\ of\ class\ Movers\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
 comment1.params=
-comment1.target=void\ act()
-comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ Movers\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment1.target=void\ moverse()
 comment2.params=
-comment2.target=void\ giros()
+comment2.target=boolean\ toparseConPared()
 comment3.params=
-comment3.target=void\ moverse()
+comment3.target=void\ llegarMeta()
 comment4.params=
-comment4.target=boolean\ toparseConPared()
+comment4.target=void\ reto()
 numComments=5
