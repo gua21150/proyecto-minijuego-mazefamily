@@ -13,7 +13,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Timer extends Actor
 {
-    private static final Color transparent = new Color(100,100,100,100); // se han cambiado los valores para que este mas oscuro el fondo
+    //private static final Color transparent = new Color(100,100,100,100); // se han cambiado los valores para que este mas oscuro el fondo
+    private static final Color transparent = new Color(0,0,0,0);
     private GreenfootImage background;
     private int value;
     private int target;
@@ -95,7 +96,7 @@ public class Timer extends Actor
     private void updateImage()
     {
         GreenfootImage image = new GreenfootImage(background);
-        GreenfootImage text = new GreenfootImage(prefix + value, 30, Color.RED, transparent);
+        GreenfootImage text = new GreenfootImage(prefix + value, 50, Color.BLUE, transparent);
         
         if (text.getWidth() > image.getWidth() - 20)
         {

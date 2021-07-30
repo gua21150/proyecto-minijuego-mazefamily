@@ -1,23 +1,19 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Esta clase indica cuando el carro ha llegado hasta la meta. Se utiliza más el objeto instanciado de esta clase
+ * Se utiliza su objeto para determinar cuando el jugador ha terminado el laberinto.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Mariel Alejandra Guamuche Recinos
+ * @version 1.0
  */
 public class Meta extends Actor
 {
     /**
-     * Act - do whatever the meta wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
+     * En el constructor se le da tamaño al objeto para que no sea pequeño
      */
-    public void act()
-    {
-        // Add your action code here.
-    }
     
-    public Meta(){
-        getImage().scale(getImage().getWidth()*2, getImage().getHeight()*2);
+    public Meta()
+    {
+        getImage().scale(getImage().getWidth()/8, getImage().getHeight()/8);
     }
 }

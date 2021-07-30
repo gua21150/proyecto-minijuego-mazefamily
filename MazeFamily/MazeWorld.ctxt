@@ -1,9 +1,9 @@
 #BlueJ class context
 comment0.target=MazeWorld
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ MyWorld\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ MazeWorld\ es\ donde\ sucede\ la\ magia\ de\ este\ juego.\ Aqu\u00ED\ se\ encontrar\u00E1n\ los\ objetos\ del\ laberinto.\ \r\n\ \r\n\ @author\ Mariel\ Alejandra\ Guamuche\ Recinos\ \r\n\ @version\ Terminado\ el\ 29/07/2021\r\n
 comment1.params=
 comment1.target=MazeWorld()
-comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ MazeWorld.\r\n\ \r\n
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ MazeWorld.\r\n\ Fundamental\ para\ inicializar\ el\ temporizador\r\n
 comment2.params=
 comment2.target=void\ act()
 comment3.params=

@@ -1,10 +1,13 @@
 #BlueJ class context
 comment0.target=Movers
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Movers\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ La\ clase\ Movers\ es\ la\ que\ genera\ los\ movimiento\ del\ objeto\ de\ la\ clase\ Car\ y\ como\ interactua\ con\ las\ dem\u00E1s\ clases,\ \ ya\ que\ es\ una\ super\ clase\ .\r\n\ \ \r\n\ @author\ Mariel\ Alejandra\ Guamuche\ Recinos\ \r\n\ @version\ 1.3\r\n
 comment1.params=
 comment1.target=void\ moverse()
+comment1.text=\r\n\ M\u00E9todo\ moverse.\ Responde\ a\ los\ comandos\ de\ direccionamiento\ de\ las\ flechas\ del\ teclado.\ Los\ movimientos\ permitidos\ son\ en\ l\u00EDnea\ recta\:\r\n\ arriba\ o\ abajo\r\n\ delante\ o\ atr\u00E1s.\r\n\ \r\n\ En\ caso\ de\ toparse\ con\ una\ pared,\ el\ movimiento\ realizado\ provocar\u00E1\ que\ se\ retroceda\ a\ la\ posici\u00F3n\ donde\ no\ chocaba.\r\n
 comment2.params=
 comment2.target=boolean\ toparseConPared()
-comment3.params=
-comment3.target=void\ llegarMeta()
+comment2.text=\r\n\ M\u00E9todo\ que\ retorna\ valor\ true\ o\ false\ dependiendo\ si\ se\ ha\ tocado\ a\ un\ objeto\ de\ la\ clase\ MazeParedes\r\n
+comment3.params=tim\ cont
+comment3.target=void\ llegarMeta(Timer,\ ContadorPuntos)
+comment3.text=\r\n\ Indica\ cuando\ el\ objeto\ Car\ ha\ llegado\ a\ la\ meta.\r\n\ Recibe\ por\ par\u00E1metros\ un\ objeto\ Timer\ y\ un\ objeto\ ContadorPuntos.\r\n\ Los\ par\u00E1metros\ ser\u00E1n\ utilizados\ para\ enviarlos\ a\ otra\ imagen\ de\ mundo\ "DisplayPuntos"\r\n
 numComments=4

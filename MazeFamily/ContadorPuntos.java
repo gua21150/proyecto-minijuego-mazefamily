@@ -1,10 +1,16 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class ContadorPuntos here.
+ * A Counter class that allows you to display a numerical value on screen.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * The Counter is an actor, so you will need to create it, and then add it to
+ * the world in Greenfoot.  If you keep a reference to the Counter then you
+ * can adjust its value.  
+
+ * 
+ * @author Neil Brown and Michael Kölling
+ * @Modificado por Mariel Guamuche // Solo valores de despliegue de imagen
+ * @version 1.0
  */
 public class ContadorPuntos extends Actor
 {

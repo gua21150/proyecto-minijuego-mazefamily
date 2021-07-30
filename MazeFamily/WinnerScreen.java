@@ -1,19 +1,14 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Winner here.
+ * Objeto donde se ha guardado el banner que se mostrará al terminar el juego. 
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Mariel Alejandra Guamuche Recinos 
+ * @version 1.0
  */
 public class WinnerScreen extends Actor
 {
     /**
-     * Act - do whatever the Winner wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
+     * No tiene métodos disponibles.
      */
-    public void act()
-    {
-        // Add your action code here.
-    }
 }

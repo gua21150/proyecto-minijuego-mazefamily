@@ -1,16 +1,15 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-import javax.swing.JOptionPane;
+
 /**
- * Write a description of class LlamadaRetos here.
+ * Esta clase solamente utiliza a sus objetos. Los objetos no contienen una acción en concreto.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Mariel Alejandra Guamuche Recinos 
+ * @version 1.3
  */
 public class LlamadaRetos extends Actor
 {
     /**
-     * Act - do whatever the LlamadaRetos wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
+     * Solamente se le da tamaño a los objetos de LlamadaRetos
      */
     
     public LlamadaRetos()

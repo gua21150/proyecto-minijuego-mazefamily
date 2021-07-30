@@ -1,20 +1,23 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class MyWorld here.
+ * MazeWorld es donde sucede la magia de este juego. Aquí se encontrarán los objetos del laberinto. 
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Mariel Alejandra Guamuche Recinos 
+ * @version Terminado el 29/07/2021
  */
 public class MazeWorld extends World
 {
+    // Atributos
     SimpleTimer timerCount = new SimpleTimer(); // Se importa la clase desde edit
     Timer timer = new Timer(); // permitira poder poner el tiempo en esta imagen
     int inicio = 0; // variable para indicar que se inicia a correr tiempo  
-    GreenfootSound music = new GreenfootSound("innocent2.mp3");
+    GreenfootSound music = new GreenfootSound("innocent2.mp3"); // instancia de objeto para reproducir música
+
+
     /**
      * Constructor for objects of class MazeWorld.
-     * 
+     * Fundamental para inicializar el temporizador
      */
     public MazeWorld()
     {    
@@ -22,7 +25,8 @@ public class MazeWorld extends World
         // Largo, alto, pixel
         super(800, 600, 1); 
         prepare(); 
-        inicio =1;
+        inicio=1; // activará el temporizador
+
     }
 
     public void act()
@@ -31,9 +35,7 @@ public class MazeWorld extends World
         {            
             timer.setValue(timerCount.millisElapsed()/1000);
         }
-        /*String tiempoTotal= Integer.toString(timer.getValue());
-        showText(tiempoTotal, getWidth()/2, getHeight()/2);*/
-        music.play();
+        music.play(); // reproduce la música 
     }
     
     /**
@@ -48,7 +50,7 @@ public class MazeWorld extends World
         addObject(contadorPuntos,55,30); 
 
         // se agrega objeto car de la clase Car
-        Car car = new Car(contadorPuntos);
+        Car car = new Car(contadorPuntos, timer);
         addObject(car,170,95);
 
         // se agregan objetos de la clase MazeParedes
@@ -175,7 +177,6 @@ public class MazeWorld extends World
         // objetos llamadaRetos
         LlamadaRetos llamadaRetos = new LlamadaRetos();
         addObject(llamadaRetos,457,104);
-
         llamadaRetos.setLocation(443,102);
         meta.setLocation(738,245);      
         addObject(timer,686,79);
@@ -199,5 +200,6 @@ public class MazeWorld extends World
         llamadaRetos5.setLocation(600,151);
         LlamadaRetos llamadaRetos6 = new LlamadaRetos();
         addObject(llamadaRetos6,348,397);
+        meta.setLocation(720,243);
     }
 }
