@@ -15,8 +15,6 @@ public class Car extends Movers
     
     private ContadorPuntos contador;
     private Timer time;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
     
     // Constructor
     /*
@@ -24,19 +22,6 @@ public class Car extends Movers
      * Recibe por parámetros el contador de puntos y el timer que serán utilizados cuando se instancie el nuevo mundo.
      */
     public Car(ContadorPuntos cont, Timer time)
-=======
-=======
->>>>>>> Stashed changes
-    // Constructor
-    
-    /*
-     * Act - do whatever the Movers wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */public Car(ContadorPuntos cont, Timer time)
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
     {
         // Le dara al objeto la mitad del tama~o original
         getImage().scale(getImage().getWidth()/2, getImage().getHeight());
@@ -44,25 +29,11 @@ public class Car extends Movers
         // El valor del contador se almacenara incluso despues de haberse llevado a cabo el constructor
         this.contador = cont;
         this.time = time;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 
     }
 
     /*
      * Llamada a métodos de la superclase Movers y de métodos locales
-=======
-=======
->>>>>>> Stashed changes
-    }
-
-    /*
-     * Act - do whatever the Movers wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
      */
     public void act()
     {
@@ -72,8 +43,6 @@ public class Car extends Movers
     }
     
     
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
     
     /*
      * Genera retos con aritmética básica, puede ser suma, resta o multiplicación.
@@ -140,65 +109,17 @@ public class Car extends Movers
                 resultadoUsuario = Integer.parseInt(inputValue);
             }
             // si las respuestas son las mismas entonces se llama al método retoCumplido
-=======
-=======
->>>>>>> Stashed changes
-    /*
-     * Act - do whatever the Movers wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */public void reto()
-    {
-        if(getOneObjectAtOffset(0, 0, LlamadaRetos.class)!= null)
-        {
-            
-            Greenfoot.playSound("rinrin.mp3");
-            int n1 = Greenfoot.getRandomNumber(20); // valor para reto entre 0 y 10
-            int n2 = Greenfoot.getRandomNumber(20); // valor para reto entre 0 y 10
-            int n3 = Greenfoot.getRandomNumber(3); // valor para saber cual reto 
-            int resultadoCorrecto=0;
-            int resultadoUsuario;
-            String inputValue = "";
-            
-            if(n3==0) // Suma
-            {
-                resultadoCorrecto = n1 + n2;
-                inputValue = JOptionPane.showInputDialog("¿Saben cuánto es?\n"+(int) n1 + "+" + (int) n2);
-            }
-            else if(n3 == 1) // resta
-            {
-                resultadoCorrecto = n1 - n2;
-                inputValue = JOptionPane.showInputDialog("¿Saben cuánto es?\n" +(int) n1 + "-" + (int) n2);
-            }
-            else if(n3 == 2) // multiplicacion
-            {
-                resultadoCorrecto = n1 * n2;
-                inputValue = JOptionPane.showInputDialog("¿Saben cuánto es?\n" + (int) n1 + "*" + (int) n2);
-            }
-            
-            resultadoUsuario = Integer.parseInt(inputValue);
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
             if(resultadoCorrecto == resultadoUsuario)
             {
                 retoCumplido();
             }
             else
             {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
                 // si el reto no fue cumplido se envía el resultado correcto y la respuesta del usuario
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
                 retoIncumplido(resultadoCorrecto, resultadoUsuario);
             }
         }
     }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 
     
     /*
@@ -215,50 +136,15 @@ public class Car extends Movers
             world = getWorld();
             world.removeObject(reto);
             contador.setValue(contador.getValue()+100); // se obtiene el valor para que se sume lo que ya se había acumulado 
-=======
-=======
->>>>>>> Stashed changes
-    
-    /*
-     * Act - do whatever the Movers wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
-    public void retoCumplido()
-    {
-        Actor reto;
-        reto = getOneObjectAtOffset(0,0, LlamadaRetos.class);
-        // metodo en caso que haya resuelto el reto     
-        if(reto != null)
-        {
-            World world;
-            world = getWorld();
-            world.removeObject(reto);
-            contador.setValue(contador.getValue()+100);
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
         }
     }
     
     /*
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
      * Resta 15 quetzales al usuario porque ha respondido incorrectamente. 
      * Recibe dos enteros, uno de la respuesta correcta y otro de la respuesta del usuario.
      * Remueve el objeto reto del mundo.
      */
 
-=======
-     * Act - do whatever the Movers wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
->>>>>>> Stashed changes
-=======
-     * Act - do whatever the Movers wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
->>>>>>> Stashed changes
     public void retoIncumplido(int respuesta, int usuario)
     {
         Actor reto;
@@ -269,8 +155,6 @@ public class Car extends Movers
             World world;
             world = getWorld();
             world.removeObject(reto);
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
             
             if(contador.getValue()>0){
                 JOptionPane.showMessageDialog(null, "Respuesta incorrecta! La respuesta es " + (int)respuesta + " \nY ustedes colocaron: " + (int) usuario + "\nSe te descontaran Q15.","WARNING_MESSAGE", JOptionPane.WARNING_MESSAGE);
@@ -299,14 +183,6 @@ public class Car extends Movers
         catch(NumberFormatException error)
         {
             return false;            
-=======
-            JOptionPane.showMessageDialog(null, "Respuesta incorrecta! La respuesta es " + (int)respuesta + " \nY ustedes colocaron: " + (int) usuario + "\n se te descontaran Q15.","WARNING_MESSAGE", JOptionPane.WARNING_MESSAGE);
-            contador.setValue(contador.getValue()-15);
->>>>>>> Stashed changes
-=======
-            JOptionPane.showMessageDialog(null, "Respuesta incorrecta! La respuesta es " + (int)respuesta + " \nY ustedes colocaron: " + (int) usuario + "\n se te descontaran Q15.","WARNING_MESSAGE", JOptionPane.WARNING_MESSAGE);
-            contador.setValue(contador.getValue()-15);
->>>>>>> Stashed changes
         }
     }
 }

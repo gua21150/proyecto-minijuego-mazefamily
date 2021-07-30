@@ -88,41 +88,17 @@ public class Movers extends Actor
     }
     
     /*
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
      * Indica cuando el objeto Car ha llegado a la meta.
      * Recibe por parámetros un objeto Timer y un objeto ContadorPuntos.
      * Los parámetros serán utilizados para enviarlos a otra imagen de mundo "DisplayPuntos"
-=======
-     * Act - do whatever the Movers wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
->>>>>>> Stashed changes
-=======
-     * Act - do whatever the Movers wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
->>>>>>> Stashed changes
      */
     public void llegarMeta(Timer tim, ContadorPuntos cont)
     {
         // metodo en caso de llegar a la meta 
         if(isTouching(Meta.class)) // si el objeto de la clase Car toca al objeto de la clase meta entonces quiere decir que llego a la meta.
         {
-<<<<<<< Updated upstream
             // Genera un nuevo mundo, que recibe los parámetros que recibe el método llegarMeta
             Greenfoot.setWorld(new DisplayPuntos(tim, cont));
         }
     }
-=======
-            // se coloca imagen de "llegar a la meta"
-            getWorld().addObject(new WinnerScreen(), getWorld().getWidth()/2, getWorld().getHeight()/2);
-            Greenfoot.stop(); // Pausara a todo greenfoot
-            Greenfoot.setWorld(new DisplayPuntos(tim, cont));
-        }
-    }
-    
-
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 }
