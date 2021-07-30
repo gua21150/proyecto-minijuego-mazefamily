@@ -1,19 +1,33 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class meta here.
+<<<<<<< Updated upstream
+ * Se utiliza su objeto para determinar cuando el jugador ha terminado el laberinto.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Mariel Alejandra Guamuche Recinos
+ * @version 1.0
+=======
+ * Esta clase indica cuando el carro ha llegado hasta la meta. Se utiliza más el objeto instanciado de esta clase.
+ * 
+ * @author Mariel Alejandra Guamuche Recinos 
+ * @version 1.2
+>>>>>>> Stashed changes
  */
-public class meta extends Actor
-{
+public class Meta extends Actor
+{    
     /**
-     * Act - do whatever the meta wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
+<<<<<<< Updated upstream
+     * En el constructor se le da tamaño al objeto para que no sea pequeño
      */
-    public void act()
+    
+    public Meta()
     {
-        // Add your action code here.
+        getImage().scale(getImage().getWidth()/8, getImage().getHeight()/8);
+=======
+     * Constructor donde se modifica el tamaño del objeto meta
+     */
+    public Meta(){   
+        getImage().scale(getImage().getWidth()*2, getImage().getHeight()*2);
+>>>>>>> Stashed changes
     }
 }

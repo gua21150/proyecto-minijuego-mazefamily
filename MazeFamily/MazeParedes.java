@@ -1,19 +1,14 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class MazeParedes here.
+ * Los muros que no nos dejarán avanzar libremente por el laberinto. Solamente se utilizarán los objetos instanciados de esta clase
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Mariel Alejandra Guamuche Recinos
+ * @version 1.0
  */
 public class MazeParedes extends Actor
 {
     /**
-     * Act - do whatever the MazeParedes wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
+     * No recibe cambio alguno 
      */
-    public void act()
-    {
-        // Add your action code here.
-    }
 }

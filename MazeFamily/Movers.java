@@ -1,52 +1,23 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Movers here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * La clase Movers es la que genera los movimiento del objeto de la clase Car y como interactua con las demás clases,  ya que es una super clase .
+ *  
+ * @author Mariel Alejandra Guamuche Recinos 
+ * @version 1.3
  */
-// Esta es una superclase, de donde las demas clases heredaran atributos y metodos
+
 public class Movers extends Actor
 {
-    /*
-     * Act - do whatever the Movers wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
-    public void act()
-    {
-        // Add your action code here.
-    }
-    int speed = 3; // es la cantidad pixeles que se mueve
+    private int speed = 3; // es la cantidad pixeles que se mueve
     
-    /*public void giros()
-     * esta clase aun no se sabe si se implementara en la version final
-    {
-        if (Greenfoot.isKeyDown("right"))
-        {
-            setRotation(0);
-            move(3);
-        }
-
-        if (Greenfoot.isKeyDown("left"))
-        {
-            setRotation(180);
-            move(3);
-        }
-
-        if (Greenfoot.isKeyDown("up"))
-        {
-            setRotation(270);
-            move(3);
-        }
-
-        if (Greenfoot.isKeyDown("down"))
-        {
-            setRotation(90);
-            move(3);
-        }
-    } */ 
-
+    /*
+     * Método moverse. Responde a los comandos de direccionamiento de las flechas del teclado. Los movimientos permitidos son en línea recta:
+     * arriba o abajo
+     * delante o atrás.
+     * 
+     * En caso de toparse con una pared, el movimiento realizado provocará que se retroceda a la posición donde no chocaba.
+     */
     public void moverse()
     {
         int x = getX(); // obtiene la posicion en x del objeto
@@ -101,6 +72,9 @@ public class Movers extends Actor
         }
     }
 
+    /*
+     * Método que retorna valor true o false dependiendo si se ha tocado a un objeto de la clase MazeParedes
+     */
     public boolean toparseConPared()
     {
         if (isTouching(MazeParedes.class)) // valida si se topa con una clase
@@ -112,4 +86,35 @@ public class Movers extends Actor
             return false;            
         }
     }
+    
+    /*
+<<<<<<< Updated upstream
+     * Indica cuando el objeto Car ha llegado a la meta.
+     * Recibe por parámetros un objeto Timer y un objeto ContadorPuntos.
+     * Los parámetros serán utilizados para enviarlos a otra imagen de mundo "DisplayPuntos"
+=======
+     * Act - do whatever the Movers wants to do. This method is called whenever
+     * the 'Act' or 'Run' button gets pressed in the environment.
+>>>>>>> Stashed changes
+     */
+    public void llegarMeta(Timer tim, ContadorPuntos cont)
+    {
+        // metodo en caso de llegar a la meta 
+        if(isTouching(Meta.class)) // si el objeto de la clase Car toca al objeto de la clase meta entonces quiere decir que llego a la meta.
+        {
+<<<<<<< Updated upstream
+            // Genera un nuevo mundo, que recibe los parámetros que recibe el método llegarMeta
+            Greenfoot.setWorld(new DisplayPuntos(tim, cont));
+        }
+    }
+=======
+            // se coloca imagen de "llegar a la meta"
+            getWorld().addObject(new WinnerScreen(), getWorld().getWidth()/2, getWorld().getHeight()/2);
+            Greenfoot.stop(); // Pausara a todo greenfoot
+            Greenfoot.setWorld(new DisplayPuntos(tim, cont));
+        }
+    }
+    
+
+>>>>>>> Stashed changes
 }

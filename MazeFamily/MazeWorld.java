@@ -1,26 +1,57 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class MyWorld here.
+ * MazeWorld es donde sucede la magia de este juego. Aquí se encontrarán los objetos del laberinto. 
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Mariel Alejandra Guamuche Recinos 
+ * @version Terminado el 29/07/2021
  */
 public class MazeWorld extends World
 {
+    // Atributos
+    SimpleTimer timerCount = new SimpleTimer(); // Se importa la clase desde edit
+    Timer timer = new Timer(); // permitira poder poner el tiempo en esta imagen
+    int inicio = 0; // variable para indicar que se inicia a correr tiempo  
+    GreenfootSound music = new GreenfootSound("innocent2.mp3"); // instancia de objeto para reproducir música
 
+<<<<<<< Updated upstream
+
+=======
+>>>>>>> Stashed changes
     /**
-     * Constructor for objects of class MyWorld.
-     * 
+     * Constructor for objects of class MazeWorld.
+     * Fundamental para inicializar el temporizador
      */
     public MazeWorld()
     {    
         // Create a new world with 800X600 cells with a cell size of 1X1 pixels.
         // Largo, alto, pixel
         super(800, 600, 1); 
-        prepare();
+        prepare(); 
+        inicio=1; // activará el temporizador
+<<<<<<< Updated upstream
+
+=======
+>>>>>>> Stashed changes
     }
 
+    public void act()
+    {
+        if (inicio == 1)
+<<<<<<< Updated upstream
+        {            
+            timer.setValue(timerCount.millisElapsed()/1000);
+        }
+=======
+        {              
+            // el valor del timer va cambiando constantemente          
+            timer.setValue(timerCount.millisElapsed()/1000); // comienza a contar los milisegundos, se divide por mil para que sean los segundos los que se muestren
+        }
+        
+>>>>>>> Stashed changes
+        music.play(); // reproduce la música 
+    }
+    
     /**
      * Prepare the world for the start of the program.
      * That is: create the initial objects and add them to the world.
@@ -28,6 +59,18 @@ public class MazeWorld extends World
     private void prepare()
     {
         // instrucciones para preparacion del mundo 
+        // agrega objeto contador de puntos
+        ContadorPuntos contadorPuntos = new ContadorPuntos();
+        addObject(contadorPuntos,55,30); 
+
+        // se agrega objeto car de la clase Car
+        Car car = new Car(contadorPuntos, timer);
+        addObject(car,170,95);
+<<<<<<< Updated upstream
+
+=======
+        
+>>>>>>> Stashed changes
         // se agregan objetos de la clase MazeParedes
         MazeParedes mazeParedes = new MazeParedes();
         addObject(mazeParedes,4*50,1*50);
@@ -146,10 +189,38 @@ public class MazeWorld extends World
         MazeParedes mazeParedes59 = new MazeParedes();
         addObject(mazeParedes59,6*50,8*50);
         // se agrega objeto meta de la clase meta
-        meta meta = new meta();
+        Meta meta = new Meta();
         addObject(meta,700,255);
-        // se agrega objeto car de la clase Car
-        Car car = new Car();
-        addObject(car,170,95);
+
+        // objetos llamadaRetos
+        LlamadaRetos llamadaRetos = new LlamadaRetos();
+        addObject(llamadaRetos,457,104);
+        llamadaRetos.setLocation(443,102);
+        meta.setLocation(738,245);      
+        addObject(timer,686,79);
+        timer.setLocation(732,73);
+        contadorPuntos.setLocation(84,52);
+        timer.setLocation(75,159);
+        contadorPuntos.setLocation(79,270);
+        timer.setLocation(72,99);
+        contadorPuntos.setLocation(738,51);
+        meta.setLocation(732,247);
+        LlamadaRetos llamadaRetos2 = new LlamadaRetos();
+        addObject(llamadaRetos2,256,252);
+        LlamadaRetos llamadaRetos3 = new LlamadaRetos();
+        addObject(llamadaRetos3,490,356);
+        LlamadaRetos llamadaRetos4 = new LlamadaRetos();
+        addObject(llamadaRetos4,608,407);
+        llamadaRetos4.setLocation(591,411);
+        llamadaRetos3.setLocation(494,350);
+        LlamadaRetos llamadaRetos5 = new LlamadaRetos();
+        addObject(llamadaRetos5,596,156);
+        llamadaRetos5.setLocation(600,151);
+        LlamadaRetos llamadaRetos6 = new LlamadaRetos();
+        addObject(llamadaRetos6,348,397);
+<<<<<<< Updated upstream
+        meta.setLocation(720,243);
+=======
+>>>>>>> Stashed changes
     }
 }
