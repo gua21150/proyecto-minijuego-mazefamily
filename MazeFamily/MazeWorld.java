@@ -14,7 +14,10 @@ public class MazeWorld extends World
     int inicio = 0; // variable para indicar que se inicia a correr tiempo  
     GreenfootSound music = new GreenfootSound("innocent2.mp3"); // instancia de objeto para reproducir música
 
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
     /**
      * Constructor for objects of class MazeWorld.
      * Fundamental para inicializar el temporizador
@@ -26,15 +29,26 @@ public class MazeWorld extends World
         super(800, 600, 1); 
         prepare(); 
         inicio=1; // activará el temporizador
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
     }
 
     public void act()
     {
         if (inicio == 1)
+<<<<<<< Updated upstream
         {            
             timer.setValue(timerCount.millisElapsed()/1000);
         }
+=======
+        {              
+            // el valor del timer va cambiando constantemente          
+            timer.setValue(timerCount.millisElapsed()/1000); // comienza a contar los milisegundos, se divide por mil para que sean los segundos los que se muestren
+        }
+        
+>>>>>>> Stashed changes
         music.play(); // reproduce la música 
     }
     
@@ -52,7 +66,11 @@ public class MazeWorld extends World
         // se agrega objeto car de la clase Car
         Car car = new Car(contadorPuntos, timer);
         addObject(car,170,95);
+<<<<<<< Updated upstream
 
+=======
+        
+>>>>>>> Stashed changes
         // se agregan objetos de la clase MazeParedes
         MazeParedes mazeParedes = new MazeParedes();
         addObject(mazeParedes,4*50,1*50);
@@ -200,6 +218,9 @@ public class MazeWorld extends World
         llamadaRetos5.setLocation(600,151);
         LlamadaRetos llamadaRetos6 = new LlamadaRetos();
         addObject(llamadaRetos6,348,397);
+<<<<<<< Updated upstream
         meta.setLocation(720,243);
+=======
+>>>>>>> Stashed changes
     }
 }
