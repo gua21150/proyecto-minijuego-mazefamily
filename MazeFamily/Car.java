@@ -16,6 +16,7 @@ public class Car extends Movers
     private ContadorPuntos contador;
     private Timer time;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     
     // Constructor
     /*
@@ -24,12 +25,17 @@ public class Car extends Movers
      */
     public Car(ContadorPuntos cont, Timer time)
 =======
+=======
+>>>>>>> Stashed changes
     // Constructor
     
     /*
      * Act - do whatever the Movers wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */public Car(ContadorPuntos cont, Timer time)
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     {
         // Le dara al objeto la mitad del tama~o original
@@ -39,17 +45,23 @@ public class Car extends Movers
         this.contador = cont;
         this.time = time;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
     }
 
     /*
      * Llamada a métodos de la superclase Movers y de métodos locales
 =======
+=======
+>>>>>>> Stashed changes
     }
 
     /*
      * Act - do whatever the Movers wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
      */
     public void act()
@@ -60,6 +72,7 @@ public class Car extends Movers
     }
     
     
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
     
     /*
@@ -128,6 +141,8 @@ public class Car extends Movers
             }
             // si las respuestas son las mismas entonces se llama al método retoCumplido
 =======
+=======
+>>>>>>> Stashed changes
     /*
      * Act - do whatever the Movers wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -161,6 +176,9 @@ public class Car extends Movers
             }
             
             resultadoUsuario = Integer.parseInt(inputValue);
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
             if(resultadoCorrecto == resultadoUsuario)
             {
@@ -169,13 +187,17 @@ public class Car extends Movers
             else
             {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                 // si el reto no fue cumplido se envía el resultado correcto y la respuesta del usuario
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
                 retoIncumplido(resultadoCorrecto, resultadoUsuario);
             }
         }
     }
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 
     
@@ -194,6 +216,8 @@ public class Car extends Movers
             world.removeObject(reto);
             contador.setValue(contador.getValue()+100); // se obtiene el valor para que se sume lo que ya se había acumulado 
 =======
+=======
+>>>>>>> Stashed changes
     
     /*
      * Act - do whatever the Movers wants to do. This method is called whenever
@@ -210,17 +234,26 @@ public class Car extends Movers
             world = getWorld();
             world.removeObject(reto);
             contador.setValue(contador.getValue()+100);
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
         }
     }
     
     /*
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
      * Resta 15 quetzales al usuario porque ha respondido incorrectamente. 
      * Recibe dos enteros, uno de la respuesta correcta y otro de la respuesta del usuario.
      * Remueve el objeto reto del mundo.
      */
 
+=======
+     * Act - do whatever the Movers wants to do. This method is called whenever
+     * the 'Act' or 'Run' button gets pressed in the environment.
+     */
+>>>>>>> Stashed changes
 =======
      * Act - do whatever the Movers wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -236,6 +269,7 @@ public class Car extends Movers
             World world;
             world = getWorld();
             world.removeObject(reto);
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
             
             if(contador.getValue()>0){
@@ -265,6 +299,10 @@ public class Car extends Movers
         catch(NumberFormatException error)
         {
             return false;            
+=======
+            JOptionPane.showMessageDialog(null, "Respuesta incorrecta! La respuesta es " + (int)respuesta + " \nY ustedes colocaron: " + (int) usuario + "\n se te descontaran Q15.","WARNING_MESSAGE", JOptionPane.WARNING_MESSAGE);
+            contador.setValue(contador.getValue()-15);
+>>>>>>> Stashed changes
 =======
             JOptionPane.showMessageDialog(null, "Respuesta incorrecta! La respuesta es " + (int)respuesta + " \nY ustedes colocaron: " + (int) usuario + "\n se te descontaran Q15.","WARNING_MESSAGE", JOptionPane.WARNING_MESSAGE);
             contador.setValue(contador.getValue()-15);

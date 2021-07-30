@@ -15,7 +15,10 @@ public class MazeWorld extends World
     GreenfootSound music = new GreenfootSound("innocent2.mp3"); // instancia de objeto para reproducir música
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
     /**
@@ -30,8 +33,11 @@ public class MazeWorld extends World
         prepare(); 
         inicio=1; // activará el temporizador
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         timerCount.mark();
 
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
     }
@@ -40,15 +46,21 @@ public class MazeWorld extends World
     {
         if (inicio == 1)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         {            
             timer.setValue(timerCount.millisElapsed()/1000);
         }
 =======
+=======
+>>>>>>> Stashed changes
         {              
             // el valor del timer va cambiando constantemente          
             timer.setValue(timerCount.millisElapsed()/1000); // comienza a contar los milisegundos, se divide por mil para que sean los segundos los que se muestren
         }
         
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
         music.play(); // reproduce la música 
     }
@@ -68,7 +80,11 @@ public class MazeWorld extends World
         Car car = new Car(contadorPuntos, timer);
         addObject(car,170,95);
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
+=======
+        
+>>>>>>> Stashed changes
 =======
         
 >>>>>>> Stashed changes
@@ -220,7 +236,10 @@ public class MazeWorld extends World
         LlamadaRetos llamadaRetos6 = new LlamadaRetos();
         addObject(llamadaRetos6,348,397);
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         meta.setLocation(720,243);
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
     }

@@ -5,7 +5,11 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * 
  * @author Mariel Alejandra Guamuche Recinos 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
  * @version 1.3
+=======
+ * @version 1.4
+>>>>>>> Stashed changes
 =======
  * @version 1.4
 >>>>>>> Stashed changes

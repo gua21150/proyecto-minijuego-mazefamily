@@ -2,7 +2,11 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
  * Este mundo despliega únicamente los datos de tiempo y de punteo de la bonificación extra que tienen los usuarios.
+=======
+ * Este mundo desplega unicamente los datos de tiempo y de punteo de la bonificación extra que tienen los usuarios.
+>>>>>>> Stashed changes
 =======
  * Este mundo desplega unicamente los datos de tiempo y de punteo de la bonificación extra que tienen los usuarios.
 >>>>>>> Stashed changes

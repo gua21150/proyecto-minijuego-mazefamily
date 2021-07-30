@@ -89,9 +89,14 @@ public class Movers extends Actor
     
     /*
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
      * Indica cuando el objeto Car ha llegado a la meta.
      * Recibe por parámetros un objeto Timer y un objeto ContadorPuntos.
      * Los parámetros serán utilizados para enviarlos a otra imagen de mundo "DisplayPuntos"
+=======
+     * Act - do whatever the Movers wants to do. This method is called whenever
+     * the 'Act' or 'Run' button gets pressed in the environment.
+>>>>>>> Stashed changes
 =======
      * Act - do whatever the Movers wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -116,5 +121,8 @@ public class Movers extends Actor
     }
     
 
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 }

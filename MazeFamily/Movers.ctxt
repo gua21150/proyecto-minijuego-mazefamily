@@ -10,7 +10,11 @@ comment2.text=\r\n\ M\u00E9todo\ que\ retorna\ valor\ true\ o\ false\ dependiend
 comment3.params=tim\ cont
 comment3.target=void\ llegarMeta(Timer,\ ContadorPuntos)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 comment3.text=\r\n\ Indica\ cuando\ el\ objeto\ Car\ ha\ llegado\ a\ la\ meta.\r\n\ Recibe\ por\ par\u00E1metros\ un\ objeto\ Timer\ y\ un\ objeto\ ContadorPuntos.\r\n\ Los\ par\u00E1metros\ ser\u00E1n\ utilizados\ para\ enviarlos\ a\ otra\ imagen\ de\ mundo\ "DisplayPuntos"\r\n
+=======
+comment3.text=\r\n\ Act\ -\ do\ whatever\ the\ Movers\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+>>>>>>> Stashed changes
 =======
 comment3.text=\r\n\ Act\ -\ do\ whatever\ the\ Movers\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
 >>>>>>> Stashed changes
